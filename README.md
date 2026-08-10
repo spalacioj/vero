@@ -13,23 +13,23 @@ Vero is a personal finance tracker for managing accounts, transactions, and spen
 
 From the repository root:
 
-```powershell
-Copy-Item .env.example .env
+```bash
+cp .env.example .env
 ```
 
 Open `.env` and replace the placeholder database name, user, and password.
 
 ### 2. Start the database
 
-```powershell
+```bash
 docker compose up -d
 ```
 
 ### 3. Start the application
 
-```powershell
+```bash
 cd backend
-.\mvnw.cmd spring-boot:run
+./mvnw spring-boot:run
 ```
 
 The API starts at `http://localhost:8080`.
@@ -38,8 +38,8 @@ The API starts at `http://localhost:8080`.
 
 From the `backend` folder:
 
-```powershell
-.\mvnw.cmd clean test
+```bash
+./mvnw clean test
 ```
 
 ## Project structure
